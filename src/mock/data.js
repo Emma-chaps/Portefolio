@@ -9,9 +9,10 @@ export const headData = {
 
 // HERO DATA
 export const heroData = {
-  title: 'Hello World ! Je suis',
-  name: 'Emmanuelle',
-  subtitle: 'Développeuse Front-End - React',
+  title: 'Hello World !',
+  subtitle1: '',
+  name: 'Je suis Emma,',
+  subtitle2: 'Développeuse Web Front-End',
   cta: 'En savoir plus',
 };
 
@@ -34,7 +35,8 @@ export const projectsData = [
     title: 'Shared Organizer',
     info: "Projet de fin d'études réalisé en 4 semaines. Equipe de 2 développeurs.",
     info2:
-      "Développement d'une application web avec React et utilisation de Redux pour la gestion d'état. Gestion de la base de données avec Postgresql et serveur développé en Node js à l'aide du framework Express.js. Déploiement sur AWS EC2 pour le Front et le Back.",
+      "Développement d'une application web avec React et utilisation de Redux pour la gestion d'état. Gestion de la base de données avec Postgresql et serveur développé en Node js à l'aide du framework Express.js.",
+    deploy: 'AWS EC2',
     url: 'https://shared-organizer.me',
     repo: 'https://github.com/Emma-chaps/Shared-Organizer_Front', // if no repo, the button will not show up
   },
@@ -44,7 +46,8 @@ export const projectsData = [
     title: 'Flag Challenge',
     info: 'Challenge Frontend Mentor',
     info2:
-      "Développement d'une application sur le thème des drapeaux avec React. Utilisation de l'API Restcountries pour les informations de chaque pays. Déploiement sur Surge",
+      "Développement d'une application sur le thème des drapeaux avec React. Utilisation de l'API Restcountries pour les informations de chaque pays.",
+    deploy: 'Surge',
     url: 'http://where-in-the-world-emma-project.surge.sh/',
     repo: 'https://github.com/Emma-chaps/Flag-Challenge', // if no repo, the button will not show up
   },
@@ -53,7 +56,8 @@ export const projectsData = [
     img: 'fourchette.jpg',
     title: 'Fourchette Game',
     info: 'Mini jeu en React',
-    info2: `Développement d'un mini jeu avec React. L'objectif est de deviné le juste prix généré aléatoirement à chaque partie. Déploiement sur Surge`,
+    info2: `Développement d'un mini jeu avec React. L'objectif est de deviné le juste prix généré aléatoirement à chaque partie.`,
+    deploy: 'Surge',
     url: 'http://fourchette-game-emma.surge.sh/',
     repo: 'https://github.com/Emma-chaps/fourchette-react', // if no repo, the button will not show up
   },
@@ -63,7 +67,8 @@ export const projectsData = [
     title: 'Cetabul',
     info: 'Application réalisé pour la société Cetabul (non maintenu)',
     info2:
-      "Développement d'une application e-commerce avec WordPress. Gestion des paiements avec Stripe. Déploiement sur Ionos.",
+      "Développement d'une application e-commerce avec WordPress. Gestion des paiements avec Stripe.",
+    deploy: 'Ionos',
     url: 'https://cetabul.com',
     repo: '', // if no repo, the button will not show up
   },
@@ -75,6 +80,7 @@ export const projectsData = [
     info2:
       "Développement d'une application de localisation avec React. Utilisation de l'API IPify pour la géolocalisation et de google maps pour la carte.",
     url: '',
+    deploy: false,
     repo: 'https://github.com/Emma-chaps/IP-address-tracker', // if no repo, the button will not show up
   },
   {
@@ -83,6 +89,7 @@ export const projectsData = [
     title: 'Chatroom',
     info: 'Application de chat codée avec TypeScript, React et Socket.io',
     info2: 'Le développement de ce projet est en cours',
+    deploy: false,
     url: '',
     repo: '', // if no repo, the button will not show up
   },
