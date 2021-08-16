@@ -2,64 +2,97 @@ import { nanoid } from 'nanoid';
 
 // HEAD DATA
 export const headData = {
-  title: '', // e.g: 'Name | Developer'
-  lang: '', // e.g: en, es, fr, jp
-  description: '', // e.g: Welcome to my website
+  title: 'Emmanuelle CHARPIN - Developer', // e.g: 'Name | Developer'
+  lang: 'fr', // e.g: en, es, fr, jp
+  description: "Portfolio d'une développeuse front-end React", // e.g: Welcome to my website
 };
 
 // HERO DATA
 export const heroData = {
-  title: '',
-  name: '',
-  subtitle: '',
-  cta: '',
+  title: 'Hello World ! Je suis',
+  name: 'Emmanuelle',
+  subtitle: 'Développeuse Front-End - React',
+  cta: 'En savoir plus',
 };
 
 // ABOUT DATA
 export const aboutData = {
   img: 'profile.jpg',
-  paragraphOne: '',
+  paragraphOne:
+    "Passionnée d'informatique depuis toujours, c'est en 2018 que mon parcours dans le développement web a commencé, lors de la création du site internet de l'entreprise Cetabul que j'avais alors entièrement réalisé avec WordPress.",
   paragraphTwo: '',
-  paragraphThree: '',
-  resume: 'https://www.resumemaker.online/es.php', // if no resume, the button will not show up
+  paragraphThree:
+    "Aujourd'hui, le développement web est devenu une véritable passion qui conjugue mon goût pour le travail bien fait, en produisant du code de qualité, et mon attrait pour la résolution de problème, en répondant au besoin d'un client.",
+  resume: 'https://www.linkedin.com/in/emmanuellecharpin/', // if no resume, the button will not show up
 };
 
 // PROJECTS DATA
 export const projectsData = [
   {
     id: nanoid(),
-    img: 'project.jpg',
-    title: '',
-    info: '',
-    info2: '',
-    url: '',
-    repo: 'https://github.com/cobidev/react-simplefolio', // if no repo, the button will not show up
+    img: 'shared-organizer1.jpg',
+    title: 'Shared Organizer',
+    info: "Projet de fin d'études réalisé en 4 semaines. Equipe de 2 développeurs.",
+    info2:
+      "Développement d'une application web avec React et utilisation de Redux pour la gestion d'état. Gestion de la base de données avec Postgresql et serveur développé en Node js à l'aide du framework Express.js. Déploiement sur AWS EC2 pour le front et le Back.",
+    url: 'https://shared-organizer.me',
+    repo: 'https://github.com/Emma-chaps/Shared-Organizer-Front', // if no repo, the button will not show up
   },
   {
     id: nanoid(),
-    img: 'project.jpg',
-    title: '',
-    info: '',
-    info2: '',
-    url: '',
-    repo: 'https://github.com/cobidev/react-simplefolio', // if no repo, the button will not show up
+    img: 'countries-challenge.jpg',
+    title: 'Flag Challenge',
+    info: 'Challenge Frontend Mentor',
+    info2:
+      "Développement d'une application sur le thème des drapeaux avec React. Utilisation de l'API Restcountries pour les informations de chaque pays. Déploiement sur Surge",
+    url: 'http://where-in-the-world-emma-project.surge.sh/',
+    repo: 'https://github.com/Emma-chaps/Flag-Challenge', // if no repo, the button will not show up
   },
   {
     id: nanoid(),
-    img: 'project.jpg',
-    title: '',
-    info: '',
-    info2: '',
+    img: 'fourchette.jpg',
+    title: 'Le jeu de la fourchette',
+    info: 'Mini jeu en React',
+    info2: `Développement d'un mini jeu avec React. L'objectif est de deviné le juste prix généré aléatoirement à chaque partie. Déploiement sur Surge`,
+    url: 'http://fourchette-game-emma.surge.sh/',
+    repo: 'https://github.com/Emma-chaps/fourchette-react', // if no repo, the button will not show up
+  },
+  {
+    id: nanoid(),
+    img: 'cetabul1.jpg',
+    title: 'Cetabul',
+    info: 'Application réalisé pour la société Cetabul (non maintenu)',
+    info2:
+      "Développement d'une application e-commerce avec WordPress. Gestion des paiements avec Stripe. Déploiement sur Ionos.",
+    url: 'https://cetabul.com',
+    repo: '', // if no repo, the button will not show up
+  },
+  {
+    id: nanoid(),
+    img: 'ip-tracker1.jpg',
+    title: 'Ip Address Tracker',
+    info: 'Challenge Frontend Mentor',
+    info2:
+      "Développement d'une application de localisation avec React. Utilisation de l'API IPify pour la géolocalisation et de google maps pour la carte.",
     url: '',
-    repo: 'https://github.com/cobidev/react-simplefolio', // if no repo, the button will not show up
+    repo: 'https://github.com/Emma-chaps/IP-address-tracker', // if no repo, the button will not show up
+  },
+  {
+    id: nanoid(),
+    img: 'work-in-progress.jpg',
+    title: 'Chatroom',
+    info: 'Application de chat codée avec TypeScript, React et Socket.io',
+    info2: 'Le développement de ce projet est en cours',
+    url: '',
+    repo: '', // if no repo, the button will not show up
   },
 ];
 
 // CONTACT DATA
 export const contactData = {
-  cta: '',
-  btn: '',
-  email: '',
+  cta: 'Vous avez apprécié votre visite ?',
+  btn: 'Contactez-moi',
+  email: 'em.charpin@gmail.com',
 };
 
 // FOOTER DATA
@@ -67,28 +100,23 @@ export const footerData = {
   networks: [
     {
       id: nanoid(),
-      name: 'twitter',
-      url: '',
-    },
-    {
-      id: nanoid(),
-      name: 'codepen',
-      url: '',
-    },
-    {
-      id: nanoid(),
       name: 'linkedin',
-      url: '',
+      url: 'https://www.linkedin.com/in/emmanuellecharpin/',
     },
     {
       id: nanoid(),
       name: 'github',
-      url: '',
+      url: 'https://github.com/Emma-chaps',
+    },
+    {
+      id: nanoid(),
+      name: 'twitter',
+      url: 'https://twitter.com/InBlocWeTrust',
     },
   ],
 };
 
 // Github start/fork buttons
 export const githubButtons = {
-  isEnabled: true, // set to false to disable the GitHub stars/fork buttons
+  isEnabled: false, // set to false to disable the GitHub stars/fork buttons
 };

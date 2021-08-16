@@ -7,7 +7,7 @@ import PortfolioContext from '../../context/context';
 
 const About = () => {
   const { about } = useContext(PortfolioContext);
-  const { img, paragraphOne, paragraphTwo, paragraphThree, resume } = about;
+  const { img, paragraphOne, paragraphThree, resume } = about;
 
   const [isDesktop, setIsDesktop] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
@@ -25,12 +25,12 @@ const About = () => {
   return (
     <section id="about">
       <Container>
-        <Title title="About Me" />
+        <Title title="Qui suis-je ?" />
         <Row className="about-wrapper">
           <Col md={6} sm={12}>
             <Fade bottom duration={1000} delay={600} distance="30px">
               <div className="about-wrapper__image">
-                <AboutImg alt="profile picture" filename={img} />
+                <AboutImg alt="photo de profile" filename={img} />
               </div>
             </Fade>
           </Col>
@@ -39,14 +39,18 @@ const About = () => {
               <div className="about-wrapper__info">
                 <p className="about-wrapper__info-text">
                   {paragraphOne ||
-                    'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi neque, ipsa animi maiores repellendu distinctioaperiam earum dolor voluptatum consequatur blanditiis inventore debitis fuga numquam voluptate architecto itaque molestiae.'}
+                    'Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, recusandae, voluptatum consequatur incidunt veritatis non nostrum itaque possimus delectus atque, placeat voluptatibus inventore velit. Hic sed provident quasi nisi, maiores rerum consectetur voluptas aut corporis debitis eius magnam, saepe aliquam.'}
                 </p>
                 <p className="about-wrapper__info-text">
-                  {paragraphTwo ||
-                    'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi neque, ipsa animi maiores repellendu distinctioaperiam earum dolor voluptatum consequatur blanditiis inventore debitis fuga numquam voluptate architecto itaque molestiae.'}
+                  En 2020, j&apos;ai entamé ma reconversion professionnelle en intégrant la
+                  formation{' '}
+                  <span className="special-text">Développeur Web Fullstack JavaScript</span> de
+                  l&apos;école O&apos;Clock. Durant cette formation, j&apos;ai acquis de solides
+                  compétences en Back et en Front, avec une spécialisation en React.
                 </p>
                 <p className="about-wrapper__info-text">
-                  {paragraphThree || 'Lorem ipsum dolor sit, amet consectetur adipisicing elit.'}
+                  {paragraphThree ||
+                    'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit, a?'}
                 </p>
                 {resume && (
                   <span className="d-flex mt-3">
@@ -56,7 +60,7 @@ const About = () => {
                       className="cta-btn cta-btn--resume"
                       href={resume}
                     >
-                      Resume
+                      Linked in
                     </a>
                   </span>
                 )}
