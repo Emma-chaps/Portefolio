@@ -1,0 +1,41 @@
+form {
+  background-color: white;
+  padding: 1.5rem 1rem;
+  position: relative;
+  max-width: 40vw;
+  border-radius: 5px;
+  margin: 0 auto;
+  @media (max-width: 1000px) {
+    max-width: 70vw;
+  }
+  @media (max-width: 800px) {
+    max-width: 90vw;
+  }
+  .close-btn {
+    width: 2rem;
+    height: 2rem;
+    position: absolute;
+    top: 4px;
+    right: 2px;
+    cursor: pointer;
+    color: black;
+    font-weight: bold;
+  }
+  .form-title {
+    color: black;
+    padding-bottom: 1rem;
+    font-weight: bold;
+  }
+  input {
+    margin-bottom: 0.5rem;
+  }
+  .button {
+    margin-top: 1rem;
+    background-color: #00c3ad;
+    border: 1px solid #00c3ad;
+  }
+  .button:hover {
+    background-color: #61e4d2;
+    border: 1px solid #61e4d2;
+  }
+}
