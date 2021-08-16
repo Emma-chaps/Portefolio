@@ -4,7 +4,7 @@ A Simple portfolio to share my projects and learn Gastby by the same case.
 
 ### Links
 
-- Live Site URL: [Portfolio](https://fervent-albattani-76aef7.netlify.app/)  
+- Live Site URL: [Portfolio](https://portfolio-emma-chaps.website/)  
   --> Deploy with [Netlify](https://www.netlify.com/)
 
 ### Built with
