@@ -34,9 +34,9 @@ export const projectsData = [
     title: 'Shared Organizer',
     info: "Projet de fin d'études réalisé en 4 semaines. Equipe de 2 développeurs.",
     info2:
-      "Développement d'une application web avec React et utilisation de Redux pour la gestion d'état. Gestion de la base de données avec Postgresql et serveur développé en Node js à l'aide du framework Express.js. Déploiement sur AWS EC2 pour le front et le Back.",
+      "Développement d'une application web avec React et utilisation de Redux pour la gestion d'état. Gestion de la base de données avec Postgresql et serveur développé en Node js à l'aide du framework Express.js. Déploiement sur AWS EC2 pour le Front et le Back.",
     url: 'https://shared-organizer.me',
-    repo: 'https://github.com/Emma-chaps/Shared-Organizer-Front', // if no repo, the button will not show up
+    repo: 'https://github.com/Emma-chaps/Shared-Organizer_Front', // if no repo, the button will not show up
   },
   {
     id: nanoid(),
@@ -51,7 +51,7 @@ export const projectsData = [
   {
     id: nanoid(),
     img: 'fourchette.jpg',
-    title: 'Le jeu de la fourchette',
+    title: 'Fourchette Game',
     info: 'Mini jeu en React',
     info2: `Développement d'un mini jeu avec React. L'objectif est de deviné le juste prix généré aléatoirement à chaque partie. Déploiement sur Surge`,
     url: 'http://fourchette-game-emma.surge.sh/',
