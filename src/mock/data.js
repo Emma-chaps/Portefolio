@@ -34,10 +34,20 @@ export const projectsData = [
     title: 'Shared Organizer',
     info: "Projet de fin d'études réalisé en 4 semaines. Equipe de 2 développeurs.",
     info2:
-      "Développement d'une application web avec React et utilisation de Redux pour la gestion d'état. Gestion de la base de données avec Postgresql et serveur développé en Node js à l'aide du framework Express.js.",
+      "Développement d'une application web avec React côté Front-End et utilisation de Redux pour la gestion d'état global. Gestion de la base de données avec Postgresql et Sequelize. Back-end développé en NodeJS à l'aide du framework ExpressJS.",
     deploy: 'AWS EC2',
     url: 'https://shared-organizer.me',
     repo: 'https://github.com/Emma-chaps/Shared-Organizer_Front', // if no repo, the button will not show up
+  },
+  {
+    id: nanoid(),
+    img: 'rock-paper-scissors.png',
+    title: 'Rock Paper Scissors Game',
+    info: 'Mini jeu codé avec TypeScript, React et Styled-Components',
+    info2: 'Le développement de ce projet est en cours',
+    deploy: false,
+    url: '',
+    repo: 'https://github.com/Emma-chaps/Rock-Paper-Scissors-Game', // if no repo, the button will not show up
   },
   {
     id: nanoid(),
@@ -81,16 +91,6 @@ export const projectsData = [
     url: '',
     deploy: false,
     repo: 'https://github.com/Emma-chaps/IP-address-tracker', // if no repo, the button will not show up
-  },
-  {
-    id: nanoid(),
-    img: 'work-in-progress.jpg',
-    title: 'Chatroom',
-    info: 'Application de chat codée avec TypeScript, React et Socket.io',
-    info2: 'Le développement de ce projet est en cours',
-    deploy: false,
-    url: '',
-    repo: '', // if no repo, the button will not show up
   },
 ];
 
