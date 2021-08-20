@@ -1,26 +1,26 @@
-import React, { useContext } from 'react';
+import React, { useContext, useState } from 'react';
 import Fade from 'react-reveal/Fade';
 import { Container } from 'react-bootstrap';
 import PortfolioContext from '../../context/context';
 import Title from '../Title/Title';
-// import ContactForm from '../Form/Form';
+import ContactForm from '../Form/Form';
 
 const Contact = () => {
   const { contact } = useContext(PortfolioContext);
   const { cta, btn, email } = contact;
-  // const [isOpenedModal, setIsOpenedModal] = useState(false);
-  // const [isOpenedSuccessMessage, setIsOpenedSuccessMessage] = useState(false);
-  // const successMessage = 'Votre message a bien été envoyé';
+  const [isOpenedModal, setIsOpenedModal] = useState(false);
+  const [isOpenedSuccessMessage, setIsOpenedSuccessMessage] = useState(false);
+  const successMessage = 'Votre message a bien été envoyé';
 
-  // const OpenContactModal = () => {
-  //   setIsOpenedModal(true);
-  // };
+  const OpenContactModal = () => {
+    setIsOpenedModal(true);
+  };
 
   return (
     <section id="contact">
       <Container>
         <Title title="Contact" />
-        <Fade bottom duration={1000} delay={300} distance="30px">
+        {/* <Fade bottom duration={1000} delay={300} distance="30px">
           <div className="contact-wrapper">
             <p className="contact-wrapper__text">
               {cta || 'Would you like to work with me? Awesome!'}
@@ -34,12 +34,12 @@ const Contact = () => {
               {btn || "Let's Talk"}
             </a>
           </div>
-        </Fade>
-        {/* {!isOpenedModal && !isOpenedSuccessMessage && (
+        </Fade>*/}
+        {!isOpenedModal && !isOpenedSuccessMessage && (
           <Fade bottom duration={1000} delay={200} distance="30px">
             <div className="contact-wrapper">
               <p className="contact-wrapper__text">
-                {cta || 'Would you like to work with me? Awesome!'}
+                {cta || `Would you like to work with me? Awesome! ${email}`}
               </p>
               <a
                 role="button"
@@ -62,7 +62,7 @@ const Contact = () => {
             />
           </Fade>
         )}
-        {isOpenedSuccessMessage && <div className="success-message">{successMessage}</div>} */}
+        {isOpenedSuccessMessage && <div className="success-message">{successMessage}</div>}
       </Container>
     </section>
   );
