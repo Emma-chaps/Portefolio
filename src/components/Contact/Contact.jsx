@@ -34,15 +34,14 @@ const Contact = () => {
               {btn || "Let's Talk"}
             </a>
           </div>
-        </Fade>*/}
+        </Fade> */}
         {!isOpenedModal && !isOpenedSuccessMessage && (
           <Fade bottom duration={1000} delay={200} distance="30px">
             <div className="contact-wrapper">
               <p className="contact-wrapper__text">
                 {cta || `Would you like to work with me? Awesome! ${email}`}
               </p>
-              <a
-                role="button"
+              <button
                 type="button"
                 className="cta-btn cta-btn--resume"
                 onClick={OpenContactModal}
@@ -50,7 +49,7 @@ const Contact = () => {
                 tabIndex={0}
               >
                 {btn || "Let's Talk"}
-              </a>
+              </button>
             </div>
           </Fade>
         )}
