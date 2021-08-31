@@ -33,8 +33,9 @@ export const projectsData = [
     img: 'shared-organizer1.jpg',
     title: 'Shared Organizer',
     info: "Projet de fin d'études réalisé en 4 semaines. Equipe de 2 développeurs.",
-    info2:
-      "Développement d'une application web avec React côté Front-End et utilisation de Redux pour la gestion d'état global. Gestion de la base de données avec Postgresql et Sequelize. Back-end développé en NodeJS à l'aide du framework ExpressJS.",
+    info2: `Développement d'une application web proposant un système
+      d'organisation et de gestion de tâches partagé entre plusieurs membres via un tableau de bord commun et modulable.`,
+    technos: 'React - Redux - SASS - NodeJs - ExpressJs - PostgreSQL - Sequelize',
     deploy: 'AWS EC2',
     url: 'https://shared-organizer.me',
     repo: 'https://github.com/Emma-chaps/Shared-Organizer_Front', // if no repo, the button will not show up
@@ -43,10 +44,11 @@ export const projectsData = [
     id: nanoid(),
     img: 'rock-paper-scissors.png',
     title: 'Rock Paper Scissors Game',
-    info: 'Mini jeu codé avec TypeScript, React et Styled-Components',
-    info2: 'Le développement de ce projet est en cours',
+    info: 'Challenge Frontend Mentor',
+    info2: "Le célèbre Pierre Feuille Ciseaux contre l'ordinateur",
+    technos: 'TypeScript - React - Styled-Components',
     deploy: false,
-    url: '',
+    url: 'https://clever-bell-e86e31.netlify.app',
     repo: 'https://github.com/Emma-chaps/Rock-Paper-Scissors-Game', // if no repo, the button will not show up
   },
   {
@@ -56,6 +58,7 @@ export const projectsData = [
     info: 'Challenge Frontend Mentor',
     info2:
       "Développement d'une application sur le thème des drapeaux avec React. Utilisation de l'API Restcountries pour les informations de chaque pays.",
+    technos: 'React - SASS',
     deploy: 'Surge',
     url: 'http://where-in-the-world-emma-project.surge.sh/',
     repo: 'https://github.com/Emma-chaps/Flag-Challenge', // if no repo, the button will not show up
@@ -66,6 +69,7 @@ export const projectsData = [
     title: 'Fourchette Game',
     info: 'Mini jeu en React',
     info2: `Développement d'un mini jeu avec React. L'objectif est de deviné le juste prix généré aléatoirement à chaque partie.`,
+    technos: 'React - SASS',
     deploy: 'Surge',
     url: 'http://fourchette-game-emma.surge.sh/',
     repo: 'https://github.com/Emma-chaps/fourchette-react', // if no repo, the button will not show up
@@ -77,6 +81,7 @@ export const projectsData = [
     info: 'Application réalisé pour la société Cetabul (non maintenu)',
     info2:
       "Développement d'une application e-commerce avec WordPress. Gestion des paiements avec Stripe.",
+    technos: 'WordPress - Stripe',
     deploy: 'Ionos',
     url: 'https://cetabul.com',
     repo: '', // if no repo, the button will not show up
@@ -89,6 +94,7 @@ export const projectsData = [
     info2:
       "Développement d'une application de localisation avec React. Utilisation de l'API IPify pour la géolocalisation et de google maps pour la carte.",
     url: '',
+    technos: 'React - SASS - Google Maps',
     deploy: false,
     repo: 'https://github.com/Emma-chaps/IP-address-tracker', // if no repo, the button will not show up
   },

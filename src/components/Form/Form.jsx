@@ -101,7 +101,7 @@ const Form = ({ setIsOpenedModal, setIsOpenedSuccessMessage }) => {
         value={message}
       />
       {/* </div> */}
-      <input class="btn btn-primary button btn-lg " type="submit" value="Envoyer" />
+      <input className="btn btn-primary button btn-lg" type="submit" value="Envoyer" />
     </form>
   );
 };

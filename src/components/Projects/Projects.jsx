@@ -28,7 +28,7 @@ const Projects = () => {
         <div className="project-wrapper">
           <Title title="Projets" />
           {projects.map((project) => {
-            const { title, info, info2, url, repo, img, id, deploy } = project;
+            const { title, info, info2, url, repo, img, id, deploy, technos } = project;
 
             return (
               <Row key={id}>
@@ -50,6 +50,7 @@ const Projects = () => {
                           </em>
                         </p>
                         <p className="mb-4">{info2 || ''}</p>
+                        <p className="mb-4">{technos || ''}</p>
                         {deploy && (
                           <p>
                             <u>Déploiement</u> : {deploy}
