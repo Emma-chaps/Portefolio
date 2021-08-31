@@ -47,7 +47,7 @@ export const projectsData = [
     info: 'Challenge Frontend Mentor',
     info2: "Le célèbre Pierre Feuille Ciseaux contre l'ordinateur",
     technos: 'TypeScript - React - Styled-Components',
-    deploy: false,
+    deploy: 'Netlify',
     url: 'https://clever-bell-e86e31.netlify.app',
     repo: 'https://github.com/Emma-chaps/Rock-Paper-Scissors-Game', // if no repo, the button will not show up
   },
