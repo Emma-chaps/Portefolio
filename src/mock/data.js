@@ -82,8 +82,8 @@ export const projectsData = [
     info2:
       "Développement d'une application e-commerce avec WordPress. Gestion des paiements avec Stripe.",
     technos: 'WordPress - Stripe',
-    deploy: 'Ionos',
-    url: '',
+    deploy: false,
+    url: false,
     repo: '', // if no repo, the button will not show up
   },
   {
