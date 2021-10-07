@@ -76,6 +76,18 @@ export const projectsData = [
   },
   {
     id: nanoid(),
+    img: 'cetabul1.jpg',
+    title: 'Cetabul',
+    info: 'Application réalisé pour la société Cetabul (non maintenu)',
+    info2:
+      "Développement d'une application e-commerce avec WordPress. Gestion des paiements avec Stripe.",
+    technos: 'WordPress - Stripe',
+    deploy: 'Ionos',
+    url: '',
+    repo: '', // if no repo, the button will not show up
+  },
+  {
+    id: nanoid(),
     img: 'ip-tracker1.jpg',
     title: 'Ip Address Tracker',
     info: 'Challenge Frontend Mentor',
