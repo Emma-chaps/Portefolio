@@ -37,7 +37,7 @@ export const projectsData = [
       d'organisation et de gestion de tâches partagé entre plusieurs membres via un tableau de bord commun et modulable.`,
     technos: 'React - Redux - SASS - NodeJs - ExpressJs - PostgreSQL - Sequelize',
     deploy: 'AWS EC2',
-    url: 'https://shared-organizer.me',
+    url: 'https://youtu.be/XliSnSJouJs?t=2084',
     repo: 'https://github.com/Emma-chaps/Shared-Organizer_Front', // if no repo, the button will not show up
   },
   {
